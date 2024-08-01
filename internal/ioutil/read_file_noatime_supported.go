@@ -24,4 +24,4 @@ import (
 	"os"
 )
 
-var readMode = os.O_RDONLY | 0x40000 // read with O_NOATIME
+var readMode = os.O_RDONLY

@@ -25,8 +25,7 @@ import (
 )
 
 var (
-	// Disallow updating access times
-	readMode = os.O_RDONLY | 0x40000 // O_NOATIME
+	readMode = os.O_RDONLY
 
 	// Write with data sync only used only for `xl.meta` writes
 	writeMode = 0x1000 // O_DSYNC
