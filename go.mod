@@ -4,9 +4,11 @@ go 1.23.0
 
 toolchain go1.24.0
 
-replace golang.org/x/crypto => golang.org/x/crypto v0.34.0
+replace golang.org/x/oauth2 => golang.org/x/oauth2 v0.27.0
 
-replace golang.org/x/net => golang.org/x/net v0.35.0
+replace golang.org/x/crypto => golang.org/x/crypto v0.35.0
+
+replace golang.org/x/net => golang.org/x/net v0.36.0
 
 replace google.golang.org/protobuf => google.golang.org/protobuf v1.33.0
 
@@ -42,7 +44,7 @@ require (
 	github.com/go-ldap/ldap/v3 v3.4.3
 	github.com/go-openapi/loads v0.21.1
 	github.com/go-sql-driver/mysql v1.6.0
-	github.com/golang-jwt/jwt/v4 v4.5.1
+	github.com/golang-jwt/jwt/v4 v4.5.2
 	github.com/gomodule/redigo v1.8.9
 	github.com/google/uuid v1.6.0
 	github.com/gorilla/mux v1.8.0
@@ -97,8 +99,8 @@ require (
 	go.etcd.io/etcd/client/v3 v3.5.12
 	go.uber.org/atomic v1.11.0
 	go.uber.org/zap v1.21.0
-	golang.org/x/crypto v0.34.0
-	golang.org/x/oauth2 v0.18.0
+	golang.org/x/crypto v0.35.0
+	golang.org/x/oauth2 v0.27.0
 	golang.org/x/sys v0.30.0
 	golang.org/x/time v0.5.0
 	google.golang.org/api v0.172.0
@@ -107,8 +109,7 @@ require (
 
 require (
 	cloud.google.com/go v0.112.0 // indirect
-	cloud.google.com/go/compute v1.24.0 // indirect
-	cloud.google.com/go/compute/metadata v0.2.3 // indirect
+	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	cloud.google.com/go/iam v1.1.5 // indirect
 	github.com/Azure/azure-pipeline-go v0.2.2 // indirect
 	github.com/Azure/go-ntlmssp v0.0.0-20211209120228-48547f28849e // indirect
@@ -174,7 +175,7 @@ require (
 	github.com/lestrrat-go/blackmagic v1.0.2 // indirect
 	github.com/lestrrat-go/httpcc v1.0.1 // indirect
 	github.com/lestrrat-go/iter v1.0.2 // indirect
-	github.com/lestrrat-go/jwx v1.2.29 // indirect
+	github.com/lestrrat-go/jwx v1.2.31 // indirect
 	github.com/lestrrat-go/option v1.0.1 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
@@ -233,12 +234,11 @@ require (
 	go.uber.org/goleak v1.3.0 // indirect
 	go.uber.org/multierr v1.8.0 // indirect
 	golang.org/x/mod v0.17.0 // indirect
-	golang.org/x/net v0.35.0 // indirect
+	golang.org/x/net v0.36.0 // indirect
 	golang.org/x/sync v0.11.0 // indirect
 	golang.org/x/term v0.29.0 // indirect
 	golang.org/x/text v0.22.0 // indirect
 	golang.org/x/tools v0.21.1-0.20240508182429-e35e4ccd0d2d // indirect
-	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/genproto v0.0.0-20240125205218-1f4bbc51befe // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240311132316-a219d84964c2 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240318140521-94a12d6c2237 // indirect
