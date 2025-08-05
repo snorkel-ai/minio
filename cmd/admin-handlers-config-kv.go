@@ -30,7 +30,6 @@ import (
 	"github.com/minio/madmin-go"
 	"github.com/minio/minio/internal/config"
 	"github.com/minio/minio/internal/config/cache"
-	"github.com/minio/minio/internal/config/etcd"
 	xldap "github.com/minio/minio/internal/config/identity/ldap"
 	"github.com/minio/minio/internal/config/identity/openid"
 	polplugin "github.com/minio/minio/internal/config/policy/plugin"
@@ -430,8 +429,6 @@ func (a adminAPIHandlers) GetConfigHandler(w http.ResponseWriter, r *http.Reques
 		for target, kv := range v {
 			off := kv.Get(config.Enable) == config.EnableOff
 			switch hkv.Key {
-			case config.EtcdSubSys:
-				off = !etcd.Enabled(kv)
 			case config.CacheSubSys:
 				off = !cache.Enabled(kv)
 			case config.StorageClassSubSys:

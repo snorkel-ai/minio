@@ -17,6 +17,8 @@
 
 package dns
 
+import "errors"
+
 // Error - DNS related errors error.
 type Error struct {
 	Bucket string
@@ -40,6 +42,9 @@ type ErrBucketConflict Error
 func (e ErrBucketConflict) Error() string {
 	return e.Bucket + " bucket conflict error: " + e.Err.Error()
 }
+
+var ErrNoEntriesFound = errors.New("No entries found for this key")
+var ErrDomainMissing = errors.New("domain is missing")
 
 // Store dns record store
 type Store interface {
